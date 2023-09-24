@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Benim Websitem</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+
+<body>
+
+    <header class="header__bilgi">
+        <div class="header__text">
+            <h1>Rastgele Bilgi Sayfası</h1>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}
+
+        <p>Rastgele Bilgi :</p>
+        <p>
+            {{rb}}
+        </p>
+
+        <ul class="list">
+            <li class="list__item">
+                <a href="/">
+                    <span>Ana Sayfa</span>
+                    <img class="item__img" src="../static/homepage.png" alt="Home Page">
+                </a>
+            </li>
+
+            <li class="list__item">
+                <a href="bilgi">
+                    <span>Başka Bilgi için Yenile</span>
+                    <img class="item__img" src="../static/yenile.png" alt="Yenile">
+                </a>
+            </li>
+        </ul>
+        
+        {% endblock %}
+    </main>
+    
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Benim Websitem</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+
+<body>
+    <header class="header__homepage">
+        <div class="header__text">
+            <h1>Ana Sayfaya Hoşgeldiniz!</h1>
+        </div>
+    </header>
+    <main>
+        {% block content %}
+        <ul class="list">
+            <li class="list__item">
+                <a href="weather">
+                    <span>Hava Durumu</span>
+                    <img class="item__img" src="../static/indir.png" alt="Hava Durumu">
+                </a>
+            </li>
+
+            <li class="list__item">
+                <a href="mizah">
+                    <span>Rastgele Mizah</span>
+                    <img class="item__img" src="../static/surt.png" alt="Mizah">
+                </a>
+            </li>
+
+            <li class="list__item">
+                <a href="bilgi">
+                    <span>Rastgele Bilgi</span>
+                    <img class="item__img" src="../static/beyn.png" alt="Bilgi">
+                </a>
+            </li>
+
+            <li class="list__item">
+                <a href="form">
+                    <span>Kayıt Formu</span>
+                    <img class="item__img" src="../static/formlogo.png" alt="Form">
+                </a>
+            </li>
+
+        </ul>
+        {% endblock %}
+    </main>
+
+</body>
+
+</html>
